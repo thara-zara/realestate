@@ -1,0 +1,101 @@
+.card{
+    width: 100%4;
+    
+    /* border: 1px solid red; */
+}
+.card-img{
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+.card-body{
+    text-align: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.card-body h3{
+    margin-bottom: 5px;
+    font-weight: normal;
+    color:rgb(32, 24, 67) ;
+    font-size: 16px;
+}
+.card-body h5{
+    color:rgb(32, 24, 67) ;
+    font-size: 16px;
+}
+.price span{
+    color: rgb(175, 175, 175);
+}
+.card-body p{
+    margin-bottom: 5px;
+    color: rgb(175, 175, 175);
+}
+.card-btm{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-top: 2px solid rgb(211, 211, 211);
+    padding-top: 10px;
+}
+.card-btm i{
+    font-size: 22px;
+    color: #e86822; 
+}
+.qty{
+    margin-left: 10px;
+}
+.card-img span{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size:22px;
+    color: #e86822;
+    cursor: pointer;
+    background:#ffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.card-img span:hover{
+    font-size:25px;
+}
+.card-btm span{
+    color: gray;
+    font-size: 14px;
+}
+.card-btm  i{
+    margin-left: 5px;
+}
+
+@media screen and (max-width:750px){
+    .card-btm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+    }
+}
+@media screen and (max-width:580px){
+    .card-btm{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:50px;
+    }
+}
+@media screen and (max-width:400px){
+    .card-btm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+    }
+}

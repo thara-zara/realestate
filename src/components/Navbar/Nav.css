@@ -1,0 +1,87 @@
+.navigation{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nav-bar{
+    width: 100%;
+}
+.nav-items{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.nav-right .fav{
+    font-size:22px;
+    color: #ffffff;
+    cursor: pointer;
+    background:#e86822;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.nav-right .fav-no{
+    font-size:22px;
+    color: rgb(48, 36, 101);
+    cursor: pointer;
+    background:#ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.nav-right .fav:hover{
+    font-size:30px;
+}
+.nav-right .fav-no:hover{
+    font-size:30px;
+}
+.log button{
+    background: #ffffff;
+    border:1px solid rgb(32, 24, 67);
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.log button span{
+    color: rgb(48, 36, 101);
+    font-size:18px;
+   
+}
+.log button i{
+    color: #e86822;
+    font-size:18px;
+}
+.log button:hover span{
+    color: #fff;
+}
+.log button:hover i{
+    color: #fff;
+}
+.log button:hover{
+    background: #e86822;
+
+}
+
+@media screen and (max-width:580px){
+    .navigation{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .log span{
+        display: none;
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

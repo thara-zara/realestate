@@ -1,0 +1,188 @@
+.single{
+    width: 100%;
+}
+.single-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.image{
+    width: 250px;
+    height: 250px;
+}
+.single img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.s-navigation{
+    width: 100%;
+}
+.single-name h1{
+    font-size: 25px;
+    color: rgb(32, 24, 67);
+    font-weight: normal;
+}
+.single-name p{
+   color: gray;
+}
+.single-price h2{
+    font-size: 25px;
+    color: rgb(32, 24, 67);
+    font-weight: normal;
+}
+.single-price span{
+    color: gray;
+}
+.single-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top:25px;
+    margin-bottom:25px;
+    align-items: center;
+}
+.single-container{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 75px;
+}
+
+.single-second-container{
+    background: rgb(234, 234, 234);
+    display: flex;
+    gap: 25px;
+}
+.single-second-container h5{
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: rgb(32, 24, 67);
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.des{
+    margin-left: 50px;
+    width: 50%;
+    background: #ffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    
+}
+.des p{
+    word-spacing: 10px;
+    color: gray;
+}
+.over{
+    margin-right: 50px;
+    width: 50%;
+    background: #ffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    height:auto;
+}
+.over-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    gap: 50px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.phone  {
+    margin-left: 10px;
+}
+.phone i{
+    color: #e86822;
+    font-size: 18px;
+}
+
+.phone p{
+    color: gray;
+}
+.icons i{
+    color: #e86822;
+    padding: 10px;
+    background: rgb(251, 251, 251);
+    font-size: 25px;
+}
+.icons p{
+    color: gray;
+    text-transform: capitalize;
+}
+.icon-body{
+    margin-left: 10px;
+}
+.icon-body h3{
+    margin-top: 5px;
+    color: rgb(32, 24, 67);
+    font-size: 16px;
+}
+@media screen and (max-width:1000px){
+    .single-second-container{
+        flex-direction: column;
+    }
+    .des{
+        margin-right: 0px;
+        margin-left:0px;
+        margin-bottom: 0;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .over{
+        margin-right: 0px;
+        margin-left: 0px;
+        width:100%;
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+    .over-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:800px){
+    .over-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:600px){
+    .single-body{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .single-container{
+        margin-left: 25px;
+        margin-right:25px;
+        margin-top: 25px;
+    }
+    .phone i{
+        font-size: 16px;
+    }
+    .single-price h2{
+        font-size: 18px;
+        color: rgb(32, 24, 67);
+        font-weight: normal;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:500px){
+    .over-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media screen and (max-width:400px){
+    .single-img{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        margin-top:25px;
+        margin-bottom:25px;
+    }
+}
